@@ -1,0 +1,39 @@
+
+#dp-background {
+    height: 100%;
+    background-color: black;
+    padding: 10px;
+    height: 300px;
+}
+.dp {
+    padding: 0px;
+    border: 5px solid white;
+    border-radius: 50%;
+    border-width: 10px;
+
+}
+.description {
+    padding: 10px;
+    font-family: Pacifico;
+    font-size: 30px;
+    background-color: orange;
+}
+.follow {
+    font-size: 20px;
+}
+.links {
+    font-size: 20px;
+     font-family: VT323;
+}
+
+h1 {
+    font-family: Bungee Shade;
+    color: navy;
+}
+#links {
+    font-size: 18px;
+}
+
+span {
+    font-family: VT323;
+}
