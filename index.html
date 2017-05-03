@@ -1,83 +1,72 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="viewport" content="width-device-width, initial-scale=1">
-    <title>
-        Prateek Gogia 
-    </title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Aldrich|Bangers|Bungee+Shade|Press+Start+2P|VT323" rel="stylesheet">
-    </head>
+<html ng-app="reeverse">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="icon" href="image.JPG">
+    <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-<!-------Main body starts from here------>
-<body>
-    <header>
-        <nav id="header-nav" class="navbar navbar-default">
-            <div class="container">
-                <div class="navbar-header text-center">
-                    <a href="index.html" class="pull-left visible-md visible-lg">
-                        <div id="logo-img"></div>
-                    </a>
-                    <div class="navbar-brand">
-                        <a href="index.html"><h1 class="text-center">Prateek<br> Gogia</h1>
-                        </a>
-                        <p>
-                            <span>
-                            -ReeverseDev-
-                            </span>
-                        </p>
-                      </div>
-                      <a id="links" href="*">Resume</a>
-                      <a id="links" href="*">Projects</a>
-                      <a id="links" href="*">About</a>
-                      <a id="links" href="*">Contact</a>
-                </div>
-            </div>
-        </nav>
-    </header>
+        ga('create', 'UA-98325790-1', 'auto');
+        ga('send', 'pageview');
 
-<!--My picture goes here-->
-    <div class="text-center" id="dp-background">
-        <img class="dp" src="images/_MG_9974.jpg" height="250px" width="250px">
-    </div>
-    <div>
-    <div class="description">
-        <p>
-            Hey there! Thanks for stopping by. 
-            This is my website and I usually upload my favorite articles but most important,
-             I upload my resume and my already done crafts or projects,whatever you want to call it.
-             I am a Web developer who loves to enjoy the latest tech and trends in the IT market. I don't
-             limit myself to just the existing technologies rather learn new tricks,new technologies.
-             If you got some work for yourself that i can contribute to,Please ping me up on any platform. I'd Love to! 
-        </p>
-    </div>
+    </script>
+    <title>Prateek Gogia - Front End Developer</title>
+</head>
+<body ng-controller="navigationController">
+<div>
+    <nav class="navbar navbar-inverse">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <h2 class="text-center">{{navbar.heading1}} <span>{{navbar.heading2}}</span></h2>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav text-center">
+                <li><a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i> {{navbar.li.category1}}</a></li>
+                <li><a href="#"><i class="fa fa-codepen" aria-hidden="true"></i> {{navbar.li.category2}}</a></li>
+                <li><a href="https://medium.com/@prateek_gogia" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i> {{navbar.li.category3}}</a></li>
+                <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i> {{navbar.li.category4}}</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-hand-paper-o" aria-hidden="true"></i> Get in touch! <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.linkedin.com/in/prateek-gogia/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i> {{navbar.li.category5}}</a></li>
+                        <li><a href="https://twitter.com/prateek_gogia" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i> {{navbar.li.category6}}</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </nav>
 </div>
-
 <div class="text-center">
-    <footer>
-        <div class="follow">
-        Follow me on:
-        </div>
-        <div class="text-center container-fluid links">
-        <div>
-            <a href="https://github.com/reeversedev"> GitHub</a>
-        </div>
-        <div>
-            <a href="https://twitter.com/prateek_gogia"> Twitter</a>
-        </div>
-        <div>
-            <a href="https://www.instagram.com/flex_execution/"> Instagram</a>
-        </div>
+    <span id="hey" class="text-center">Hey!</span><br>
     </div>
-    </footer>
-</div>
-    <!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
+        <img id="image" src="https://s.yimg.com/ny/api/res/1.2/gn_YVq0nl44xsIXhx3ucHw--/YXBwaWQ9aGlnaGxhbmRlcjtzbT0xO3c9NTAwO2g9MjA4/http://33.media.tumblr.com/08ff4be47386311cdb5e52f3a3d50fd2/tumblr_inline_o2rveckTXD1sypkn8_500.gif"
+             class="img-responsive">
+    <p id="note">{{navbar.note.line1}}<br>
+    {{navbar.note.line2}}<br>
+    {{navbar.note.line3}}<br>
+        <b><i> {{navbar.note.line4}}</i></b>
+    </p>
 </body>
 </html>
