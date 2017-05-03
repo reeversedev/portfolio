@@ -1,0 +1,38 @@
+body {
+    background-color: #fffc00;
+}
+h2 {
+    font-family: 'Bungee Shade';
+    color: blue;
+    margin-top: 5px;
+}
+span {
+    color: #c7254e;
+}
+li {
+    font-size: 18px;
+}
+#links {
+    margin-left: auto;
+}
+
+#hey {
+    font-size: 60px;
+}
+#note {
+    font-size: 18px;
+    margin: 10px;
+}
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+.navbar .navbar-collapse {
+    text-align: center;
+    width: 100%;
+}
+@media (max-width:768px){
+    h2 {
+        margin-top: -40px;
+    }
+}
